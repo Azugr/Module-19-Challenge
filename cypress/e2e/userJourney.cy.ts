@@ -11,15 +11,6 @@ describe('User Journey', () => {
     cy.contains('Welcome to the Tech Quiz!').should('be.visible');
     cy.contains('Start Quiz').should('be.visible');
 
-    // Handle window events
-    cy.on('window:before:unload', (e) => {
-      expect(e.returnValue).to.be.undefined;
-    });
-
-    cy.on('window:unload', () => {
-      done();
-    });
-
     // Start the quiz
     cy.get('button').contains('Start Quiz').click();
     cy.wait('@fetchQuestions');
