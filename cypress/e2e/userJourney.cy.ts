@@ -3,7 +3,7 @@ describe('User Journey', () => {
     cy.intercept('GET', '/api/questions/random', { fixture: 'questions.json' }).as('fetchQuestions');
   });
 
-  it('should navigate through the quiz and complete it', (done) => {
+  it('should navigate through the quiz and complete it', () => {
     // Visit the home page
     cy.visit('/');
 
