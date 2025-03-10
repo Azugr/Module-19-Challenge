@@ -16,7 +16,7 @@ describe('User Journey', () => {
       expect(e.returnValue).to.be.undefined;
     });
 
-    cy.on('window:unload', (e) => {
+    cy.on('window:unload', () => {
       done();
     });
 
