@@ -4,7 +4,16 @@ import { mount } from "cypress/react18";
 
 describe("Quiz Component", () => {
   beforeEach(() => {
-    cy.intercept("GET", "/api/questions/random", { fixture: "questions.json" }).as("fetchQuestions");
+    cy.intercept("GET", "/api/questions/random", {
+      statusCode: 200,
+      body: [
+        {
+          question: "What is the output of print(2 ** 3)?",
+          options: ["6", "8", "9", "12"],
+          answer: "8"
+        }
+      ]
+    }).as("fetchQuestions");
   });
 
   it("renders the quiz start screen", () => {
@@ -18,7 +27,7 @@ describe("Quiz Component", () => {
     mount(<Quiz />);
     cy.contains("Start Quiz").click();
     cy.wait("@fetchQuestions");
-    cy.contains("What is the capital of France?").should("exist");
+    cy.contains("What is the output of print(2 ** 3)?").should("exist");
 
   });
 
@@ -27,9 +36,9 @@ describe("Quiz Component", () => {
     cy.contains("Start Quiz").click();
     cy.wait("@fetchQuestions");
 
-    cy.contains("What is the capital of France?").should("exist");
+    cy.contains("What is the output of print(2 ** 3)?").should("exist");
 
-    cy.contains("Paris").click(); 
+    cy.contains("8").click(); 
 
     cy.contains("Quiz Completed", { timeout: 10000 }).should("exist");
 
