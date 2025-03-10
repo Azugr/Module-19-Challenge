@@ -90,7 +90,7 @@ Then, run:
 📸 **Take screenshots of passing tests for the assignment submission.**
 
 ## **📽️ Walkthrough Video**
-📌 **[Click here](https://drive.google.com/file/d/1_qjuz3MC4MzBiR4jWb_zxzjEOXOVxIES/view?usp=drive_link) to watch the Cypress test walkthrough.**
+📌 **[Click here](https://drive.google.com/file/d/1LmQQ_2Wc64h52BO5fkiKZosaqqm7Eygm/view?usp=sharing) to watch the Cypress test walkthrough.**
 
 ## **📌 Notes**
 This project follows best practices for file structure, test writing, and documentation. It was completed as part of an **educational assignment** and may not be a full-featured application beyond testing purposes.
