@@ -75,10 +75,6 @@ npm run test		    cypress/e2e/ (E2E tests)
 npm run test-component	cypress/component/ (Component tests)
 npm run test-gui	    Opens Cypress GUI	Lets you select any test
 ```
-Then, run:
-- **Component Tests:** `Quiz.cy.ts`
-- **End-to-End Tests:** `quiz.cy.ts`
-
 ## **📽️ Walkthrough Video**
 📌 **[Click here](https://drive.google.com/file/d/1CF6I5lObKme-6ucmr8pII2eeF_vysaML/view?usp=drive_link) to watch the Cypress test walkthrough.**
 
