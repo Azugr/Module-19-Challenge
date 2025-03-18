@@ -65,36 +65,25 @@ NODE_ENV=development
 ### **4️⃣ Run the Application**
 Start the backend and frontend together:
 ```sh
-npm run start:dev
-```
-
-Alternatively, start them separately:
-```sh
-# Start Backend (server)
-npm run server:dev
-
-# Start Frontend (client)
-cd client
-npm run dev
+npm run develop
 ```
 
 ## **🧪 Running Cypress Tests**
 Once the app is running, open a new terminal and launch Cypress:
 ```sh
-npx cypress open
+npm run test		    cypress/e2e/ (E2E tests)
+npm run test-component	cypress/component/ (Component tests)
+npm run test-gui	    Opens Cypress GUI	Lets you select any test
 ```
 Then, run:
 - **Component Tests:** `Quiz.cy.ts`
 - **End-to-End Tests:** `quiz.cy.ts`
 
-📸 **Take screenshots of passing tests for the assignment submission.**
-
 ## **📽️ Walkthrough Video**
-📌 **[Click here](https://drive.google.com/file/d/1LmQQ_2Wc64h52BO5fkiKZosaqqm7Eygm/view?usp=sharing) to watch the Cypress test walkthrough.**
+📌 **[Click here](https://drive.google.com/file/d/1CF6I5lObKme-6ucmr8pII2eeF_vysaML/view?usp=drive_link) to watch the Cypress test walkthrough.**
 
 ## **📌 Notes**
 This project follows best practices for file structure, test writing, and documentation. It was completed as part of an **educational assignment** and may not be a full-featured application beyond testing purposes.
 
 ---
 **© 2025 - Assignment Submission for Coding Bootcamp**
-
