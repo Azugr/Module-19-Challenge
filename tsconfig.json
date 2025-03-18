@@ -28,6 +28,7 @@
     "useUnknownInCatchVariables": true /* Ensure 'unknown' is used for catch clause variables. */,
     "resolveJsonModule": true /* Include modules imported with .json extension */,
     "isolatedModules": true /* Ensure that each file can be safely transpiled without relying on other imports */,
-    "baseUrl": "./" /* Base directory to resolve non-relative module names */
+    "baseUrl": "./" /* Base directory to resolve non-relative module names */,
+    "outDir": "./dist" /* Redirect output structure to the directory */
   }
 }
